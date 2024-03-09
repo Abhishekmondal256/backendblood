@@ -67,6 +67,7 @@ console.log(req);
 router.post("/signin", async (req, res) => {
   try {
     let token;
+    
     const { email, password } = req.body;
     if (!email || !password) {
       return res.status(400).json({ error: "plz filled the data" });
