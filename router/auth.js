@@ -113,7 +113,7 @@ router.post("/signin", async (req, res) => {
   }
 
 });
-router.get("/about",Authenticate,(req,res)=>{
+router.get("/about",authenticate,(req,res)=>{
 
 res.send(req.rootUser);
 
