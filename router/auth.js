@@ -3,9 +3,10 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 const multer=require("multer");
-
+const cors=require("cors");
 const cookieParser=require("cookie-parser");
 router.use(cookieParser());
+router.use(cors());
 const authenticate=require("../middleware/authenticate");
 
 require("../db/conn");
