@@ -25,6 +25,7 @@ console.log(req);
 next();
 }
 catch(err){
+    console.log("authenticate error");
     console.log(err);
 res.status(401).send("Unauthorized:No token provided");
 
