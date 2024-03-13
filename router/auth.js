@@ -4,13 +4,15 @@ const jwt = require("jsonwebtoken");
 const router = express.Router();
 const multer=require("multer");
 const cors=require("cors");
+const bodyParser = require('body-parser');
 const cookieParser=require("cookie-parser");
 const corsOption={
 origin:"https://frontendblood.onrender.com"
 }
   
 router.use(cookieParser());
-
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 router.use(cors(corsOption));
 const authenticate=require("../middleware/authenticate");
 console.log(authenticate);
