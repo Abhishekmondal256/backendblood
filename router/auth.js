@@ -120,11 +120,11 @@ router.post("/signin", async (req, res) => {
 
 });
 router.get("/about",authenticate,(req,res)=>{
-res.header("Access-Control-Allow-Origin","*");
-  res.header("Access-Control-Allow-Methods",
-             "GET,HEAD,OPTIONS,PUT,POST,DELETE");
-  res.header("Access-Control-Allow-Headers",
-             "Origin,X-Requested-With,Content-Type,Accept,Authorization");
+// res.header("Access-Control-Allow-Origin","*");
+//   res.header("Access-Control-Allow-Methods",
+//              "GET,HEAD,OPTIONS,PUT,POST,DELETE");
+//   res.header("Access-Control-Allow-Headers",
+//              "Origin,X-Requested-With,Content-Type,Accept,Authorization");
 res.send(req.rootUser);
 
 })
