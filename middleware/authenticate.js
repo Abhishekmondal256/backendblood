@@ -3,10 +3,10 @@ const User=require("../model/userSchema");
 const Authenticate=async(req,res,next)=>{
 try{
     console.log("rishi");
-    alert('rishi');
+   
 const token=req.cookies.jwtoken;
     console.log(token);
-    alert(token);
+  
 const verifytoken=jwt.verify(token,process.env.SECRET_KEY);
     console.log("me");
     console.log(process.env.SECRET_KEY);
