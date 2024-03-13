@@ -7,7 +7,8 @@ const cors=require("cors");
 const bodyParser = require('body-parser');
 const cookieParser=require("cookie-parser");
 const corsOption={
-origin:"https://frontendblood.onrender.com"
+origin:"https://frontendblood.onrender.com",
+   credentials: true,
 }
   
 router.use(cookieParser());
