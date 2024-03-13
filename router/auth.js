@@ -13,7 +13,7 @@ router.use(cookieParser());
 
 router.use(cors(corsOption));
 const authenticate=require("../middleware/authenticate");
-
+console.log(authenticate);
 require("../db/conn");
 
 
