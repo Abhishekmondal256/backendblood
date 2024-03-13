@@ -5,12 +5,13 @@ const router = express.Router();
 const multer=require("multer");
 const cors=require("cors");
 const bodyParser = require('body-parser');
-
+const path = require('path');
 const cookieParser=require("cookie-parser");
 const corsOption={
 origin:"https://frontendblood.onrender.com",
    credentials: true,
 }
+  
   
 router.use(cookieParser());
 router.use(bodyParser.json());
