@@ -72,6 +72,7 @@ console.log(req);
 //login route
 router.post("/signin", async (req, res) => {
   try {
+    console.log(req);
     let token;
     
     const { email, password } = req.body;
