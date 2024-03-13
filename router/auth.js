@@ -92,6 +92,7 @@ router.post("/signin", async (req, res) => {
       console.log(token);
       res.cookie("jwtoken", token, {
         expires: new Date(Date.now() + 25892000000),
+         secure: true,
          sameSite: 'None',
          httpOnly:true
            
